@@ -1,0 +1,90 @@
+@import "theme/child_theme_variables";                   // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap5/bootstrap";                             // <------- Loads Bootstrap4
+@import "assets/understrap/theme/understrap";  // <------- Loads the Understrap defaults. Just a few classes to incorporate BS in WP
+@import "assets/understrap/theme/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/fontawesome/font-awesome";                           // <------- Font Awesome Icon font
+@import "assets/underscores";                            // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme";                             // <------- Add your styles into this file
+@import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.
+@import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
+@import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
+
+body{
+    background: #e7e7e7;
+}
+#page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#wrapper-footer{
+    margin-top: auto;
+}
+
+.page-banner-cont, .movie-cont, #wrapper-footer{
+    background: #ffffff;
+}
+
+.page-banner-header, .page-banner-sub, .page-banner-back, .search-form{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+#movies{
+    .movie{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .movie-cont{
+        display: grid;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+    }
+}
+
+.movie-details{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    *{
+        width: 100%;
+    }
+}
+
+.search-form{
+    .sf-text{
+        margin-top: 6px;
+        width: calc(70% - 82px);
+    }
+    .sf-btn{
+        margin-top: -4px;
+    }
+}
+
+.bgred{
+    background: #FF0000;
+}
+
+.bggreen{
+    background: #00FF00;
+}
+
+.bgblue{
+    background: #0000FF;
+    color: #fff;
+}
+
+.bgyellow{
+    background: #FFFF00;
+}
+
+
+
+
